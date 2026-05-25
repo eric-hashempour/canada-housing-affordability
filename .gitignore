@@ -7,3 +7,6 @@ __pycache__/
 
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
+
+# Text files
+txt files/
