@@ -10,3 +10,6 @@ __pycache__/
 
 # Text files
 txt files/
+
+# Data files
+data/
