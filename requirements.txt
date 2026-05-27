@@ -1,9 +1,10 @@
 pandas
-numpy
-sqlalchemy
-pyodbc
-python-dotenv
 matplotlib
+requests
+python-dotenv
+snowflake-connector-python
+dbt-snowflake
 seaborn
-statsmodels
 scipy
+statsmodels
+scikit-learn

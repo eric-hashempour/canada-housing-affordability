@@ -13,3 +13,8 @@ txt files/
 
 # Data files
 data/
+
+# dbt
+canada_housing/target/
+canada_housing/dbt_packages/
+canada_housing/logs/
