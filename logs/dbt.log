@@ -1,0 +1,113 @@
+[0m22:48:36.070088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002526C3B02F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025268CEF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002526E4E3B10>]}
+
+
+============================== 22:48:36.075334 | f667f3f2-e354-44a4-98ef-6a85af1e1092 ==============================
+[0m22:48:36.075334 [info ] [MainThread]: Running with dbt=1.11.11
+[0m22:48:36.076009 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ersha\\.dbt', 'invocation_command': 'dbt init', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:48:36.099283 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ersha\.dbt
+[0m22:48:55.498460 [debug] [MainThread]: Starter project path: C:\Users\ersha\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m22:48:55.530274 [info ] [MainThread]: 
+Your new dbt project "canada_housing" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:48:55.530826 [info ] [MainThread]: Setting up your profile.
+[0m22:49:19.601652 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:49:19.602115 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:49:19.602468 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:51:13.817796 [info ] [MainThread]: Profile canada_housing written to C:\Users\ersha\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:51:13.819331 [debug] [MainThread]: Command `dbt init` succeeded at 22:51:13.819195 after 157.91 seconds
+[0m22:51:13.819760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002527247FBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002526E5ACDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002527245B240>]}
+[0m22:51:13.820273 [debug] [MainThread]: Flushing usage events
+[0m22:51:14.293353 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:51:39.986319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E404602F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E3CDCF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E42593B10>]}
+
+
+============================== 22:51:39.992794 | 62929376-038b-4ee5-9fbc-a3a1b84c0e0d ==============================
+[0m22:51:39.992794 [info ] [MainThread]: Running with dbt=1.11.11
+[0m22:51:39.993525 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ersha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:51:40.027443 [info ] [MainThread]: dbt version: 1.11.11
+[0m22:51:40.028115 [info ] [MainThread]: python version: 3.13.9
+[0m22:51:40.028770 [info ] [MainThread]: python path: C:\Users\ersha\anaconda3\python.exe
+[0m22:51:40.029910 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:51:41.132179 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:51:41.132695 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:51:41.133123 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:51:41.231576 [info ] [MainThread]: Using profiles dir at C:\Users\ersha\.dbt
+[0m22:51:41.232602 [info ] [MainThread]: Using profiles.yml file at C:\Users\ersha\.dbt\profiles.yml
+[0m22:51:41.233521 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ersha\OneDrive\Desktop\programming_data\portfolio_projects\canada_housing_project\dbt_project.yml
+[0m22:51:41.234900 [info ] [MainThread]: adapter type: snowflake
+[0m22:51:41.235320 [info ] [MainThread]: adapter version: 1.11.5
+[0m22:51:41.235741 [info ] [MainThread]: Configuration:
+[0m22:51:41.236216 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:51:41.236656 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:51:41.237129 [info ] [MainThread]: Required dependencies:
+[0m22:51:41.237618 [debug] [MainThread]: Executing "git --help"
+[0m22:51:41.374449 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:51:41.375056 [debug] [MainThread]: STDERR: "b''"
+[0m22:51:41.375577 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:51:41.376170 [info ] [MainThread]: Connection:
+[0m22:51:41.376651 [info ] [MainThread]:   account: ui48522.ca-central-1.aws
+[0m22:51:41.377109 [info ] [MainThread]:   user: hashemshem
+[0m22:51:41.377597 [info ] [MainThread]:   database: HOUSING_AFFORDABILITY
+[0m22:51:41.378126 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:51:41.378539 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m22:51:41.378948 [info ] [MainThread]:   schema: STAGING
+[0m22:51:41.379375 [info ] [MainThread]:   authenticator: None
+[0m22:51:41.379875 [info ] [MainThread]:   oauth_client_id: None
+[0m22:51:41.380286 [info ] [MainThread]:   query_tag: None
+[0m22:51:41.380698 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:51:41.381065 [info ] [MainThread]:   host: None
+[0m22:51:41.381442 [info ] [MainThread]:   port: None
+[0m22:51:41.381820 [info ] [MainThread]:   proxy_host: None
+[0m22:51:41.382191 [info ] [MainThread]:   proxy_port: None
+[0m22:51:41.382584 [info ] [MainThread]:   protocol: None
+[0m22:51:41.382978 [info ] [MainThread]:   connect_retries: 1
+[0m22:51:41.383422 [info ] [MainThread]:   connect_timeout: None
+[0m22:51:41.383836 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:51:41.384335 [info ] [MainThread]:   retry_all: False
+[0m22:51:41.384886 [info ] [MainThread]:   insecure_mode: False
+[0m22:51:41.385339 [info ] [MainThread]:   reuse_connections: True
+[0m22:51:41.385756 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:51:41.386146 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m22:51:41.386897 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m22:51:41.898582 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:51:42.251332 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:51:42.251705 [debug] [MainThread]: On debug: select 1 as id
+[0m22:51:42.251990 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:51:43.818509 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m22:51:43.819143 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m22:51:43.819716 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:51:43.820597 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:51:43.821297 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ersha\OneDrive\Desktop\programming_data\portfolio_projects\canada_housing_project\dbt_project.yml> not found
+
+[0m22:51:43.821990 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: ui48522.ca-central-1.aws.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:51:43.823854 [debug] [MainThread]: Command `dbt debug` failed at 22:51:43.823632 after 4.05 seconds
+[0m22:51:43.824449 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:51:43.825015 [debug] [MainThread]: On debug: No close available on handle
+[0m22:51:43.825604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4661B6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E46A18A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E46654380>]}
+[0m22:51:43.826288 [debug] [MainThread]: Flushing usage events
+[0m22:51:44.288746 [debug] [MainThread]: An error was encountered while trying to flush usage events
