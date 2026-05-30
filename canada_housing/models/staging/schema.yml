@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw
+    database: HOUSING_AFFORDABILITY
+    schema: RAW
+    tables:
+      - name: BOC_RATES
+      - name: CREA_MONTHLY
+
+models:
+  - name: stg_boc_rates
+    columns:
+      - name: month_date
+        tests:
+          - not_null
+          - unique
+  - name: stg_crea_benchmark
+    columns:
+      - name: month_date
+        tests:
+          - not_null
+      - name: city
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - 'GREATER_TORONTO'
+                  - 'GREATER_VANCOUVER'
+                  - 'CALGARY'
+                  - 'EDMONTON'
+                  - 'MONTREAL_CMA'
+                  - 'OTTAWA'
+                  - 'WINNIPEG'
+                  - 'HALIFAX_DARTMOUTH'
+      - name: composite_benchmark
+        tests:
+          - not_null     
