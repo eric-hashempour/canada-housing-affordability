@@ -33,5 +33,10 @@ models:
   canada_housing:
     staging:
       +materialized: view
+      +schema: STAGING
+    intermediate:
+      +materialized: view
+      +schema: STAGING
     marts:
       +materialized: table
+      +schema: MARTS
