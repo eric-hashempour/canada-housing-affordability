@@ -17,17 +17,17 @@ jobs:
                 mkdir -p /home/runner/.dbt
                 cat > /home/runner/.dbt/profiles.yml << EOF
                 canada_housing:
-                target: dev
-                outputs:
+                  target: dev
+                  outputs:
                     dev:
-                    type: snowflake
-                    account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
-                    user: ${{ secrets.SNOWFLAKE_USER }}
-                    password: ${{ secrets.SNOWFLAKE_PASSWORD }}
-                    warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
-                    database: ${{ secrets.SNOWFLAKE_DATABASE }}
-                    schema: MARTS
-                    threads: 1
+                      type: snowflake
+                      account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+                      user: ${{ secrets.SNOWFLAKE_USER }}
+                      password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+                      warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+                      database: ${{ secrets.SNOWFLAKE_DATABASE }}
+                      schema: MARTS
+                      threads: 1
                 EOF
 
             - name: dbt test
