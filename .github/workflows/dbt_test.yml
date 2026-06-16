@@ -7,10 +7,28 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               
             - name: dbt install
               run: pip install dbt-snowflake
+
+            - name: Create dbt profiles.yml
+              run: |
+                mkdir -p /home/runner/.dbt
+                cat > /home/runner/.dbt/profiles.yml << EOF
+                canada_housing:
+                target: dev
+                outputs:
+                    dev:
+                    type: snowflake
+                    account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+                    user: ${{ secrets.SNOWFLAKE_USER }}
+                    password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+                    warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+                    database: ${{ secrets.SNOWFLAKE_DATABASE }}
+                    schema: MARTS
+                    threads: 1
+                EOF
 
             - name: dbt test
               working-directory: canada_housing
