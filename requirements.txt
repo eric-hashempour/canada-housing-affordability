@@ -1,10 +1,11 @@
 pandas
+numpy
 matplotlib
+seaborn
 requests
 python-dotenv
-snowflake-connector-python
+snowflake-connector-python[pandas]
 dbt-snowflake
-seaborn
 scipy
 statsmodels
 scikit-learn
