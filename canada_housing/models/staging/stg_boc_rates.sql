@@ -7,4 +7,4 @@ SELECT
     mortgage_rate_5yrs_variable,
     policy_rate,
     prime_rate   
-FROM {{ source('raw', 'BOC_RATES') }}
+FROM {{ source('raw', 'BOC_RATES_MONTHLY') }}
