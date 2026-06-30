@@ -143,3 +143,8 @@ Built in Power BI with 4 pages:
 - **Custom dbt schema macro:** `generate_schema_name.sql` required to prevent dbt from prepending the default schema name to custom schema names in Snowflake.
 - **2018 baseline:** Provides pre-pandemic context for the 2022–2024 rate hike analysis.
 - **scikit-learn + statsmodels:** scikit-learn used for per-city coefficient extraction; statsmodels added for p-value significance testing which scikit-learn does not natively provide.
+
+## Data Sources
+
+- **[CREA MLS® HPI Tool](https://www.crea.ca/housing-market-stats/mls-home-price-index/hpi-tool/)** — MLS® Benchmark Price (Composite) for 8 Canadian cities, 2018–2025
+- **[Bank of Canada Valet API](https://www.bankofcanada.ca/valet/docs)** — Policy rate, mortgage rates, debt service ratio, loan-to-income ratio, and mortgage arrears series
